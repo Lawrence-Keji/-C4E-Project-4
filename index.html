@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Lofem Shopping Mall | Security Bot</title></head>
+<body>
+    <div class="card">
+        <h2>LOFEM Shopping Mall</h2>
+        <p>Kindly fill this form before entry</p>
+        <form onsubmit="return false">
+            <label>What is your name?</label><br>
+            <input id="name" type="text" placeholder="Enter your name" name="Name" required><br>
+            
+            <label>How old are you?</label><br>
+            <input id="age" type="number" placeholder="Enter your age" name="Age" required><br>
+            
+            <label for="face-mask">Are you wearing a face mask?</label>
+            <select name="face-mask" id="face-mask">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select><br>
+            
+            <button class="btn" type="button" onclick="validateEntry();">Submit</button>
+        </form>
+        
+        <div class="visits">
+            <div class="visitors" id="allowed">Allowed Visitors: 0</div>
+            <div class="visitors" id="denied">Denied Visitors: 0</div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
